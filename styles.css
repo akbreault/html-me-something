@@ -1,0 +1,117 @@
+footer {
+    text-align: center;
+}
+
+.hero {
+    background-image: url("images/curled-kittens.jpg");
+    background-size: cover;
+    padding: 250px 0;
+    color: white;
+    opacity: 0.6;
+}
+
+h1 {
+    position: absolute;
+    left: 75px;
+    top: 100px;
+    font-size: 250px;
+}
+
+.img {
+    border-radius: 100%;
+    display: flex;
+    flex: 0 0 150px;
+    height: 150px;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 150px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin: 20px 50px;
+
+}
+
+.img img {
+    height: 100%;
+}
+
+.img_overlay {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity 0.25s;
+    z-index: 1;
+    background-color: rgba(46,204,113,0.4);
+    background: linear-gradient(65deg, rgba(46,204,113,0.4), rgba(243,156,18,0.4));
+    color: #fafafa;
+    font-size: 24px;
+}
+
+.img_overlay:hover {
+    opacity: 1;
+}
+
+#circles {
+    width: 100%;
+    text-align: center;
+}
+
+#circles .img {
+    display: inline-block;
+}
+
+p {
+    display: inline-block;
+}
+
+body {
+    background-color: #ccc4cc;
+    background-image: url("https://www.transparenttextures.com/patterns/white-paperboard.png");
+    margin: 10px;
+}
+  
+.wrapper {
+    margin: 30px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: [col1-start] 150px  [col2-start] 150px  [col3-start] 150px [col4-start] 100px [col5-start] 100px [col6-start] 100px [col6-end];
+    grid-template-rows: [row1-start] 150px [row2-start] 100px [row3-start] 100px [row4-start] 75px [row5-start] 75px [row5-end];
+    color: #444;
+}
+    
+.pic {
+    grid-column: col1-start / col4-start;
+    grid-row: row1-start / row4-start;
+}
+      
+.heading {
+    grid-column: col4-start / col6-end;
+    grid-row: row1-start ;
+}
+      
+.q-cats {
+    grid-column: col4-start / col6-end;
+    grid-row: row2-start / row5-end;
+}
+      
+.skills {
+    grid-column: col1-start / col4-start;
+    grid-row: row4-start / row5-end;
+}
+
+.gif {
+    grid-column: col4-start / col6-end;
+    grid-row: row4-start / row5-end;
+}
+
+img {
+    object-fit: cover;
+    height: 100%;
+}
